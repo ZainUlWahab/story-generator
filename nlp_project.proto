@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+service nlp_project {
+  rpc get_trends(get_trends_request) returns (trends);
+}
+
+message get_trends_request {
+  string country_code = 1;
+  string theme = 2;
+  bool generate_audio = 3;
+}
+
+message trends {
+  string result = 1;
+  string story = 2;
+  bytes audio = 3;
+  string status = 4;
+  string message = 5;
+}

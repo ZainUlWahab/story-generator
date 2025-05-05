@@ -1,0 +1,8 @@
+grpcio
+grpcio-tools
+trendspy
+torch
+TTS
+transformers
+pyngrok
+google-generativeai

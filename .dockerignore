@@ -1,0 +1,29 @@
+# Ignore Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore virtual environments (if any)
+venv/
+.env/
+
+# Ignore temporary files
+*.log
+*.tmp
+*.bak
+*.swp
+
+# Ignore model/data files (you can adjust based on actual needs)
+*.pth
+*.pt
+*.onnx
+*.wav
+
+# Ignore Jupyter notebook checkpoints (if present)
+.ipynb_checkpoints/
+
+# Ignore datasets/input/output folders (if working in Kaggle or similar)
+input/
+output/
+dataset/

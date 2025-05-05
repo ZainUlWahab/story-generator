@@ -1,0 +1,20 @@
+version: "3.8"
+
+services:
+  nlp-server:
+    build: .
+    container_name: nlp_grpc_server
+    ports:
+      - "50051:50051"
+    environment:
+      - COQUI_TOS_AGREED=1
+      - PYTHONUNBUFFERED=1
+    volumes:
+      - ./sahal-voice:/app/sahal-voice         # Make sure sahal_voice.wav is here
+      - ./models:/root/.cache/tts              # Optional: to persist/downloaded TTS models
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - capabilities: [gpu]              # Enable GPU access
+    runtime: nvidia                            # Ensure Docker uses NVIDIA runtime
