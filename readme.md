@@ -129,6 +129,9 @@ message trends {
 - **Story Quality**: Generated stories are limited by the capabilities of the underlying model
 - **Audio Generation**: TTS requires a good quality speaker reference sample for optimal results
 
+## 🎬 Demo
+https://github.com/yourusername/repo-name/assets/your-asset-id/nlp_project_demo.mp4
+The demo video showcases the application's functionality from entering a country code and theme to receiving generated content and audio output.
 ## 📝 Development Notes
 
 - Set `USE_API=True` in `server.py` to use Google's Gemini Pro instead of the local Qwen model

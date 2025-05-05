@@ -18,7 +18,7 @@ def get_trends(country_code, theme, generate_audio):
         if not country_code or not theme:
             return "Please enter a valid country code and theme.", None
 
-        server_address = "2.tcp.ngrok.io:11209"  # Change to ngrok if needed
+        server_address = "8.tcp.ngrok.io:11078"  # Change to ngrok if needed
         with grpc.insecure_channel(server_address) as channel:
             stub = nlp_project_pb2_grpc.nlp_projectStub(channel)
             request = nlp_project_pb2.get_trends_request(
