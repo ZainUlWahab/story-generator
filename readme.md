@@ -130,7 +130,7 @@ message trends {
 - **Audio Generation**: TTS requires a good quality speaker reference sample for optimal results
 
 ## 🎬 Demo
-https://github.com/ZainUlWahab/story-generator/blob/main/nlp_project_demo.mp4
+![Video](https://github.com/ZainUlWahab/story-generator/blob/5ed167ebb9efd81f12cecd9037de921e29fe989d/nlp_project_demo.mp4)
 The demo video showcases the application's functionality from entering a country code and theme to receiving generated content and audio output.
 ## 📝 Development Notes
 
