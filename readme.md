@@ -102,9 +102,6 @@ message trends {
 ### API Testing
 - The api was tested thoroughly using the Postman collection. The link to the collection is here [link](https://www.postman.com/zainulwahab/workspace/zain-ul-wahab-s-workspace/collection/6817aef0cccde77c367fe9a8?action=share&creator=44661341)
 
-### Performance Graph
-![queue_response_times](https://github.com/user-attachments/assets/f6b88226-fd68-433f-951b-8dcffb8cf67f)
-
 ## 🧠 Models & Technologies
 
 ### Core Technologies
