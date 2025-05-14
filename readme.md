@@ -2,7 +2,7 @@
 
 A full-stack application that fetches trending topics from Google Trends based on country code, generates creative stories incorporating those trends, and optionally creates audio narration using text-to-speech technology.
 
-## 📋 Features
+## Features
 
 - **Real-time Google Trends**: Fetch the latest trending topics by country code
 - **AI-powered Story Generation**: Create unique stories using Qwen 2.5 7B LLM
@@ -11,7 +11,7 @@ A full-stack application that fetches trending topics from Google Trends based o
 - **Web Interface**: Simple Gradio UI for interacting with the system
 - **Microservice Architecture**: Client-server model using gRPC for efficient communication
 
-## 🏗️ Architecture
+## Architecture
 
 The application follows a client-server architecture using gRPC for communication:
 
@@ -34,7 +34,7 @@ The application follows a client-server architecture using gRPC for communicatio
                 └───────────┘ └──────────┘  └────────────┘
 ```
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -65,7 +65,7 @@ docker-compose up -d
 docker-compose logs server
 ```
 
-## 📊 Usage
+## Usage
 
 1. **Start the application**: Access the Gradio web interface (URL provided in logs)
 2. **Enter parameters**:
@@ -75,7 +75,7 @@ docker-compose logs server
 3. **Submit**: Click the submit button to generate your story
 4. **Results**: View the trending topics, story, and play audio (if generated)
 
-## 💻 API Reference
+## API Reference
 
 ### Proto Definition
 
@@ -102,7 +102,7 @@ message trends {
 ### API Testing
 - The api was tested thoroughly using the Postman collection. The link to the collection is here [link](https://www.postman.com/zainulwahab/workspace/zain-ul-wahab-s-workspace/collection/6817aef0cccde77c367fe9a8?action=share&creator=44661341)
 
-## 🧠 Models & Technologies
+## Models & Technologies
 
 ### Core Technologies
 - **gRPC**: High-performance RPC framework for service communication
@@ -121,7 +121,7 @@ message trends {
 - **Transformers**: Hugging Face library for state-of-the-art NLP
 - **TTS**: Coqui TTS library for text-to-speech synthesis
 
-## ⚠️ Limitations
+## Limitations
 
 - **Resource Requirements**: Running the LLM and TTS models locally requires significant computational resources (GPU recommended)
 - **NGROK Limitations**: Free tier has connection and bandwidth constraints
@@ -129,20 +129,20 @@ message trends {
 - **Story Quality**: Generated stories are limited by the capabilities of the underlying model
 - **Audio Generation**: TTS requires a good quality speaker reference sample for optimal results
 
-## 🎬 Demo
+## Demo
 
 
 https://github.com/user-attachments/assets/b2f1257d-5dd3-4760-9b43-9f4cd9e169b3
 
 The demo video showcases the application's functionality from entering a country code and theme to receiving generated content and audio output.
 
-## 📝 Development Notes
+## Development Notes
 
 - Set `USE_API=True` in `server.py` to use Google's Gemini Pro instead of the local Qwen model
 - Modify the speaker reference file path in `server.py` to use your custom voice
 - The server is configured to run on Kaggle by default (note the path adjustment for Kaggle in `server.py`)
 
-## 👏 Acknowledgements
+## Acknowledgements
 
 - [TrendsPy](https://github.com/jayfk/trendspy) for Google Trends integration
 - [Coqui TTS](https://github.com/coqui-ai/TTS) for the XTTS speech synthesis model
