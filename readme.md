@@ -148,3 +148,4 @@ The demo video showcases the application's functionality from entering a country
 - [Coqui TTS](https://github.com/coqui-ai/TTS) for the XTTS speech synthesis model
 - [Qwen Team](https://huggingface.co/Qwen) for the language model
 - [Gradio](https://gradio.app/) for the web interface framework
+  
